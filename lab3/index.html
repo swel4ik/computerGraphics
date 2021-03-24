@@ -6,7 +6,7 @@
 
     <script type="text/javascript" src="glMatrix-0.9.5.min.js"></script>
     <script type="text/javascript" src="webgl-utils.js"></script>
-    <script type="text/javascript" src="3d.js"></script>
+    <script id="sc" type="text/javascript" src="GLOBAL_Y.js"></script>
 
 <script id="shader-fs" type="x-shader/x-fragment">
     precision mediump float;
@@ -36,7 +36,15 @@
 
 
 <body onload="webGLStart();">
-<canvas id="lesson01-canvas" style="border: none;" width="500" height="500"></canvas>
+<canvas id="lesson01-canvas" style="border: none;" width="1000" height="700"></canvas>
+<!--<script>-->
+<!--    document.addEventListener('keyup', function(){-->
+<!--    console.log('Success onkeyup');-->
+<!--    let current_script = document.getElementById("sc");-->
+<!--    current_script.src = "FULL_Y.js"-->
+<!--    // window.location.reload();-->
+<!--});</script>-->
+
 </body>
 
 </html>
